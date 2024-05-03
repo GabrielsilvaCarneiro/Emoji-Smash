@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "smartKitchen",
-    "slug": "smartKitchen",
+    "name": "Emoji-Smash",
+    "slug": "Emoji-Smash",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -21,10 +21,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.gabrielsilvacarneiro.EmojiSmash"
     },
     "web": {
       "favicon": "./assets/images/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "9fd0b53e-3778-40bf-a778-dcd35f09edd4"
+      }
     }
   }
 }

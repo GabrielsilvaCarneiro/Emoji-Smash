@@ -73,15 +73,16 @@ export default function App() {
         console.log(erro);
       }
     } else {
-      try {
-        const dataUrl = await domtoimage.toJpeg(imageRef.current, {
+      try {               
+        //  Para alterar de Png para Jpeg basta alterar o toPnj por toJpeg
+        const dataUrl = await domtoimage.toPng(imageRef.current, {
           quality: 0.95,
           width: 320,
           height: 440,
         });
   
         let link = document.createElement('a');
-        link.download = 'sticker-smash.jpeg';
+        link.download = 'sticker-smash.Png';
         link.href = dataUrl;
         link.click();
       } catch (erro) {
